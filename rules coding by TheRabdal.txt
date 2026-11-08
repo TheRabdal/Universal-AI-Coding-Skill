@@ -1,0 +1,20 @@
+ingatkan ini untuk penerapan coding tugas seterusnya : 
+- gunakan bahasa Indonesia
+- jangan ada yang pakai Stateful tetapi saya mau menggunakan stateless dengan state management provider
+- gunakan Container dibanding Expanded tetapi jika perlukan gunakan Expanded dan jangan sampai ada problem
+- gunakan antislop ai
+- jangan ada commentar
+- selalu buat codingan yang sangat sederhana saja
+- hilangkan const jika tidak diperlukan banget
+- perapihan import dan export package disesuaikan untuk fokus pada satu packages.dart
+- strukturkan kodenya jika diperlukan khusus di folder models, provider, widgets
+- jangan menyentuh codingan yang sudah dirubah jika ada perubahan manual
+- saya mau codingan yang aman dari serangan hacker, security audit skill yang mendetail
+- rapihkan kodenya dengan serapih mungkin dan tidak terlihat codingan AI
+- saya mau codingan di refactoring dengan prinsip clean code dan code formatting
+- saya mau codingan yang lebih scalable untuk web maupun mobile
+- saya mau codingan minim bug
+- jangan ada Extract Widget biar saya aja yang Extract Widgetnya
+- disable run project
+
+
