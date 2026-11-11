@@ -194,3 +194,14 @@ ATURAN AI CODING
 - Animasi pakai implisit dulu; jika butuh controller, taruh di Provider/BLoC dengan TickerProvider.
 - State hanya Provider (tugas) atau BLoC (enterprise).
 - Keamanan, testing, CI/CD, observability masuk aturan enterprise.
+
+23. ATURAN PERUBAHAN VISUAL
+- Jika diminta merapikan codingan tanpa mengubah tampilan visual, dilarang mengubah hasil render UI.
+- Dilarang mengubah ukuran, warna, padding, margin, radius, font, ikon, posisi, dan urutan widget.
+- Dilarang mengganti jenis widget yang memengaruhi tampilan (misal Container ke SizedBox) kecuali hasil visual identik.
+- Dilarang mengubah teks, label, placeholder, dan nilai default yang terlihat user.
+- Dilarang mengubah struktur layout (Row, Column, Stack) jika memengaruhi posisi atau ukuran.
+- Perubahan hanya boleh pada hal yang tidak terlihat: penamaan, struktur file, import/export, pemisahan logic, format kode, dan penghapusan duplikasi.
+- Jika refactoring berpotensi mengubah visual, wajib berhenti dan minta konfirmasi.
+- Jika ada keraguan apakah perubahan memengaruhi visual, anggap memengaruhi visual dan jangan dilakukan.
+- Laporkan daftar perubahan dan pastikan tidak ada perubahan visual.
