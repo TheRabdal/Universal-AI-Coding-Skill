@@ -18,3 +18,4 @@ ingatkan ini untuk penerapan coding tugas seterusnya :
 - disable run project
 
 
+saya mau nilai dari kolom target objective itu mengambil nilai dari keseluruhan actual end dibagi keseluruhan planned end, jadi tidak ada input manual
