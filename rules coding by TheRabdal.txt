@@ -16,6 +16,7 @@ ingatkan ini untuk penerapan coding tugas seterusnya :
 - saya mau codingan minim bug
 - jangan ada Extract Widget biar saya aja yang Extract Widgetnya
 - disable run project
+- antislop diaktifkan saat pengerjaan
 
 
 saya mau nilai dari kolom target objective itu mengambil nilai dari keseluruhan actual end dibagi keseluruhan planned end, jadi tidak ada input manual
