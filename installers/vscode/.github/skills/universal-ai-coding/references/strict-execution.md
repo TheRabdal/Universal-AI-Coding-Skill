@@ -1,9 +1,16 @@
-# Strict Execution Policy
+# Kebijakan Eksekusi
 
-Default: no execution without explicit permission for the exact action.
+AI tidak menjalankan atau membuka aplikasi/project dan tidak menjalankan server. Build dan run hanya dilakukan melalui pipeline project, bukan secara lokal oleh AI.
 
-Do not run project, server, build, compile, tests, benchmark, migrations, seed, formatter, generator, analyzer that executes code, package install/update/remove, scripts, Docker, CI, deployment, publishing, active scanners, fuzzing, or penetration tests.
+## Pemeriksaan kualitas
 
-Read-only inspection (read files, list directories, search text, inspect diffs) is allowed when safe.
+- Pipeline wajib menjalankan formatter, analyzer, unit/widget/integration test, dan coverage gate sesuai konfigurasi project.
+- AI boleh melakukan pemeriksaan format, analyze, dan test yang tidak menjalankan aplikasi/project, mengikuti tooling dan kebiasaan project. Jangan menjalankan pemeriksaan yang diam-diam memulai aplikasi, server, atau build.
+- Jangan menjalankan package install/update/remove, migration, seed, deployment, publish/release, atau perubahan remote tanpa permintaan dan otorisasi yang sesuai.
+- Security scanner aktif, fuzzing, dan penetration test memerlukan otorisasi serta scope eksplisit.
 
-If execution is needed, state the exact command, purpose, and side effects, then ask permission and wait. Permission for one command does not authorize other commands. Never claim unperformed verification.
+## Inspeksi dan pelaporan
+
+Inspeksi read-only seperti membaca file, melihat struktur, mencari teks, dan membaca status/diff diperbolehkan jika aman. Jangan menjalankan perintah dengan efek samping yang tidak jelas.
+
+Lakukan review statis pada diff, logika, error handling, edge case, keamanan, kompatibilitas, struktur, serta dampak platform. Laporkan pemeriksaan yang benar-benar dijalankan, pipeline yang belum tersedia, dan risiko tersisa. Jangan mengklaim hasil yang belum dibuktikan.

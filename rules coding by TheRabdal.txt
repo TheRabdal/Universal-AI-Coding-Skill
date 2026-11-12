@@ -1,7 +1,5 @@
 ATURAN AI CODING PADA PROJECT INI :
 
-- separate moduls
-
 1. PRINSIP DASAR
 - Gunakan percakapan dalam bahasa Indonesia.
 - Kode harus sederhana, mudah dibaca, dan mudah dirawat.
@@ -207,3 +205,5 @@ ATURAN AI CODING PADA PROJECT INI :
 - Jika refactoring berpotensi mengubah visual, wajib berhenti dan minta konfirmasi.
 - Jika ada keraguan apakah perubahan memengaruhi visual, anggap memengaruhi visual dan jangan dilakukan.
 - Laporkan daftar perubahan dan pastikan tidak ada perubahan visual.
+
+

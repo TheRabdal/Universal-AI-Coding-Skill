@@ -36,9 +36,10 @@ Untuk project yang memakai banyak agent, gunakan folder `.agents/skills/universa
 - Tidak ada script installer yang otomatis menjalankan perintah.
 - Instalasi dilakukan dengan menyalin folder skill ke lokasi yang sesuai.
 - Jangan menimpa skill atau aturan yang sudah ada tanpa meninjau diff.
-- Skill memberi instruksi kepada agent; ia bukan sandbox atau pengunci permission. Untuk Strict Mode yang benar-benar enforced, tetap gunakan permission/approval controls pada coding agent dan sistem operasi.
+- Aturan khusus project, termasuk `rules coding by TheRabdal.txt` bila tersedia, tetap menjadi acuan wajib dan dapat lebih ketat daripada skill universal ini.
+- Skill memberi instruksi kepada agent; ia bukan sandbox atau pengunci permission. AI tidak menjalankan project atau build/run lokal; build/run dan quality gate wajib melalui pipeline project.
 - Tidak semua AI mendukung Agent Skills. Untuk AI yang hanya menerima system prompt/custom instructions, salin isi `SKILL.md` ke bagian instruksi globalnya.
-- Periksa daftar skill yang terdeteksi oleh agent setelah instalasi dan lakukan uji kecil yang tidak memerlukan eksekusi project.
+- Periksa daftar skill yang terdeteksi setelah instalasi tanpa menjalankan project. Pemeriksaan statis dan quality checks yang tidak meluncurkan aplikasi mengikuti aturan project.
 
 ## Penyesuaian
-Edit `SKILL.md` dan file di `references/` sebagai sumber utama. Salinan pada folder `installers/` dibuat untuk kemudahan instalasi; jika mengubah sumber utama, salin ulang versi terbaru ke adapter yang digunakan.
+Edit `SKILL.md` dan file di `references/` sebagai sumber utama. Salinan pada folder `installers/` dibuat untuk kemudahan instalasi; jika mengubah sumber utama, salin ulang versi terbaru ke adapter yang digunakan. Pastikan seluruh salinan SKILL dan referensi tetap identik dengan sumber kanonis.
